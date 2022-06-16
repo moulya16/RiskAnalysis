@@ -5,7 +5,7 @@ train = pd.read_csv('https://raw.githubusercontent.com/mridulrb/Predict-loan-eli
 # https://raw.githubusercontent.com/Kamin-At/Loan_prediction/master/data/train_ctrUa4K.csv
 train.head()
 
-train.shape
+
 
 train["Gender"] = train["Gender"].map({'Male':0, 'Female':1})
 train["Married"] = train["Married"].map({'No':0, 'Yes':1})
@@ -19,7 +19,7 @@ train.isnull().sum()
 
 X = train[['Gender','Married','ApplicantIncome','LoanAmount','Credit_History']]
 y = train.Loan_Status
-X.shape, y.shape
+
 
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state = 42)
