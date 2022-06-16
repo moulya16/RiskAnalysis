@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import Pipeline
