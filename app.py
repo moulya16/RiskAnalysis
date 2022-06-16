@@ -461,11 +461,11 @@ lottie_loading_an = load_lottieurl(
 def make_prediction():
     # connect to s3 bucket
     # for s3 API keys when deployed on streamlit share
-    client = boto3.client(
-        's3', aws_access_key_id=st.secrets["access_key"], aws_secret_access_key=st.secrets["secret_access_key"])
+    #client = boto3.client(
+     #   's3', aws_access_key_id=st.secrets["access_key"], aws_secret_access_key=st.secrets["secret_access_key"])
     # for s3 API keys when deployed on locally
-    # client = boto3.client('s3', aws_access_key_id='access_key',
-    #                       aws_secret_access_key='secret_access_key')
+     client = boto3.client('s3', aws_access_key_id='access_key',
+                           aws_secret_access_key='secret_access_key')
 
     bucket_name = "loanamount"
     key = "trained_Random Forest Regression"
