@@ -1,4 +1,4 @@
- import pandas as pd
+import pandas as pd
 import numpy as np
 
 train = pd.read_csv('https://raw.githubusercontent.com/mridulrb/Predict-loan-eligibility-using-IBM-Watson-Studio/master/Dataset/train_ctrUa4K.csv')
