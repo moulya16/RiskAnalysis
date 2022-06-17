@@ -15,7 +15,7 @@ from streamlit_lottie import st_lottie_spinner
 import streamlit as st
 
 full_data = pd.read_csv(
-    "train.csv"
+    "https://raw.githubusercontent.com/semasuka/Loan-amount-prediction-regression/main/datasets/train.csv"
 )
 
 low_memory=False
